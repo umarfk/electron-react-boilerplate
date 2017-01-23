@@ -1,5 +1,6 @@
 // @flow
 import React, { Component } from 'react';
+import RaisedButton from 'material-ui/RaisedButton';
 
 export default class App extends Component {
   props: {
@@ -9,6 +10,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
+        <RaisedButton label="Default" />
         {this.props.children}
       </div>
     );
